@@ -1,9 +1,30 @@
 <html lang="en">
 <head>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
   <title>Rock Paper Scissors game</title>
 </head>
 <body>
-    <h1>Please go to the console (F12) to play ! Press F5 to play again</h1>
+  <h1>Rock Paper Scissors Game</h1>
+  <div class="button-container">
+      <button value="rock"><img src="/img/rock.png" alt="Rock"></button>
+      <button value="paper"><img src="/img/paper.png" alt="Paper"></button>
+      <button value="scissors"><img src="/img/scissors.png" alt="Scissors"></button>
+  </div>
+  <div class="results hidden">
+      <table>
+          <thead>
+              <tr>
+                  <th>Round</th>
+                  <th>Your Choice</th>
+                  <th>Computer's Choice</th>
+                  <th>Result</th>
+              </tr>
+          </thead>
+          <tbody id="results-body">
+          </tbody>
+      </table>
+  </div>
+  <button id="restart" style="display: none;">Play Again</button>
 </body>
 </html>
